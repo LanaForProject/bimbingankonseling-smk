@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Janji Konseling Online - BK SMKN 7 Kota Serang</title>
+  
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome 6 Free -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  
+  <!-- Custom Dark & Light Theme -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Theme Script -->
+  <script src="assets/js/theme.js"></script>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar d-none d-lg-block">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center gap-4">
+        <span><i class="fa-regular fa-envelope me-2"></i>bk@smkn7kotaserang.sch.id</span>
+        <span><i class="fa-solid fa-phone me-2"></i>(0254) 824-777</span>
+        <span><i class="fa-solid fa-location-dot me-2"></i>Ruang Konseling Gedung A Lt. 1</span>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <div class="brand-icon-box">
+          <i class="fa-solid fa-heart-pulse"></i>
+        </div>
+        <div>
+          <span class="brand-title">BK Online</span>
+          <span class="brand-subtitle">SMK Negeri 7 Kota Serang</span>
+        </div>
+      </a>
+
+      <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars fs-4"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-1">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#beranda">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#tentang">Tentang</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#layanan">Layanan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#alur">Alur</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#guru">Guru BK</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#cek-status">
+              <i class="fa-solid fa-magnifying-glass me-1"></i> Cek Status
+            </a>
+          </li>
+
+          <!-- THEME TOGGLE BUTTON -->
+          <li class="nav-item ms-lg-2 my-2 my-lg-0">
+            <button class="btn-theme-toggle" type="button" title="Ganti Mode Gelap / Terang" aria-label="Ganti Tema">
+              <i class="fa-solid fa-sun"></i>
+            </button>
+          </li>
+
+          <!-- TOMBOL LOGIN -->
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <a class="btn-outline-pill" href="login.html" title="Masuk ke Portal BK">
+              <i class="fa-solid fa-right-to-bracket me-1"></i> Masuk
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- FORM JANJI KONSELING CONTENT -->
+  <div class="py-5" style="background: var(--bg-body); min-height: 80vh;">
+    <div class="container">
+      
+      <!-- Top Bar Navigation / Back Button -->
+      <div class="d-flex flex-wrap justify-content-between align-items-center mb-4 gap-3">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none" style="color: var(--accent-cyan);"><i class="fa-solid fa-house me-1"></i> Beranda</a></li>
+            <li class="breadcrumb-item active" aria-current="page" style="color: var(--text-main);">Janji Konseling</li>
+          </ol>
+        </nav>
+        <a href="index.html" class="btn-outline-pill btn-sm">
+          <i class="fa-solid fa-arrow-left me-1"></i> Kembali ke Beranda
+        </a>
+      </div>
+
+      <!-- Header Judul -->
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="section-tag">Layanan Konseling Siswa</span>
+        <h1 class="section-heading mt-2">Formulir Janji Konseling Online</h1>
+        <div class="section-divider"></div>
+        <p class="text-secondary mt-3">
+          Sampaikan kebutuhan bimbingan atau kendala yang sedang kamu hadapi. Privasi dan kerahasiaan ceritamu dijamin 100% aman bersama Guru BK SMKN 7 Kota Serang.
+        </p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+
+          <!-- Pesan Sukses (Dinamis) -->
+          <div id="alertSuccess" class="alert alert-success alert-dismissible fade show p-4 rounded-4 shadow-sm mb-4 border-0" role="alert" style="display: none; background: rgba(34, 197, 94, 0.15); border: 1px solid rgba(34, 197, 94, 0.3) !important;">
+            <div class="d-flex align-items-start gap-3">
+              <i class="fa-solid fa-circle-check fs-1 text-success mt-1"></i>
+              <div>
+                <h5 class="alert-heading fw-bold mb-1 text-success">Permohonan Janji Temu Berhasil Dikirim!</h5>
+                <p class="mb-3" style="color: var(--text-main);">
+                  Jadwal konsultasi Anda telah dicatat. Silakan cek berkala status jadwal konfirmasi dan catatan solusi dari Guru BK melalui tombol di bawah ini.
+                </p>
+                <div class="d-flex flex-wrap gap-2">
+                  <a id="btnCekStatusSubmitted" href="index.html#cek-status" class="btn-primary-pill btn-sm">
+                    <i class="fa-solid fa-magnifying-glass me-1"></i> Cek Status Janji Temu
+                  </a>
+                  <a href="index.html" class="btn-outline-pill btn-sm">
+                    <i class="fa-solid fa-house me-1"></i> Kembali ke Beranda
+                  </a>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn-close" onclick="document.getElementById('alertSuccess').style.display='none'" aria-label="Close"></button>
+          </div>
+
+          <!-- Kartu Formulir -->
+          <div class="appointment-box">
+            <form id="formJanjiKonseling">
+              <div class="row g-3">
+                <!-- NIS -->
+                <div class="col-md-6">
+                  <label for="nis" class="form-label fw-semibold"><i class="fa-solid fa-id-card me-1"></i> Nomor Induk Siswa (NIS)</label>
+                  <input type="text" class="form-control" id="nis" name="nis" placeholder="Contoh: 2025001" required>
+                  <small class="text-secondary">Gunakan NIS aktif untuk memantau status jadwal konseling.</small>
+                </div>
+
+                <!-- Nama Lengkap -->
+                <div class="col-md-6">
+                  <label for="nama" class="form-label fw-semibold"><i class="fa-solid fa-user me-1"></i> Nama Lengkap Siswa</label>
+                  <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukkan nama lengkap siswa" required>
+                </div>
+
+                <!-- Tingkat Kelas -->
+                <div class="col-md-6">
+                  <label for="kelas" class="form-label fw-semibold"><i class="fa-solid fa-chalkboard-user me-1"></i> Tingkat Kelas</label>
+                  <select class="form-select" id="kelas" name="kelas" required>
+                    <option value="">-- Pilih Tingkat Kelas --</option>
+                    <option value="X">Kelas X (Sepuluh)</option>
+                    <option value="XI">Kelas XI (Sebelas)</option>
+                    <option value="XII">Kelas XII (Dua Belas)</option>
+                  </select>
+                </div>
+
+                <!-- Jurusan -->
+                <div class="col-md-6">
+                  <label for="jurusan" class="form-label fw-semibold"><i class="fa-solid fa-graduation-cap me-1"></i> Konsentrasi Keahlian / Jurusan</label>
+                  <select class="form-select" id="jurusan" name="jurusan" required>
+                    <option value="">-- Pilih Jurusan --</option>
+                    <option value="Rekayasa Perangkat Lunak">Rekayasa Perangkat Lunak (RPL)</option>
+                    <option value="Teknik Komputer &amp; Jaringan">Teknik Komputer &amp; Jaringan (TKJ)</option>
+                    <option value="Teknik Kendaraan Ringan">Teknik Kendaraan Ringan (TKR)</option>
+                    <option value="Teknik Pemesinan">Teknik Pemesinan (TPM)</option>
+                    <option value="Desain Komunikasi Visual">Desain Komunikasi Visual (DKV)</option>
+                    <option value="Lainnya">Lainnya</option>
+                  </select>
+                </div>
+
+                <!-- Pilih Guru BK -->
+                <div class="col-md-6">
+                  <label for="id_guru" class="form-label fw-semibold"><i class="fa-solid fa-user-tie me-1"></i> Pilih Guru Pembimbing</label>
+                  <select class="form-select" id="id_guru" name="id_guru" required>
+                    <option value="">-- Pilih Guru BK --</option>
+                    <option value="1">Dra. Hj. Siti Aminah, M.Pd. (NIP: 198703152011012001)</option>
+                    <option value="2">Budi Santoso, S.Pd., Kons. (NIP: 198506202010011003)</option>
+                    <option value="3">Trisha Amelia, S.Psi. (NIP: 199208122019032007)</option>
+                  </select>
+                </div>
+
+                <!-- Tanggal Konseling -->
+                <div class="col-md-6">
+                  <label for="tanggal" class="form-label fw-semibold"><i class="fa-regular fa-calendar-days me-1"></i> Perkiraan Tanggal Konseling</label>
+                  <input type="date" class="form-control" id="tanggal" name="tanggal" required>
+                </div>
+
+                <!-- Kategori Masalah -->
+                <div class="col-12">
+                  <label for="kategori" class="form-label fw-semibold"><i class="fa-solid fa-tags me-1"></i> Kategori Pendampingan</label>
+                  <select class="form-select" id="kategori" name="kategori" required>
+                    <option value="Bimbingan Pribadi">Bimbingan Pribadi (Keluarga, Emosi, Kepercayaan Diri)</option>
+                    <option value="Bimbingan Sosial">Bimbingan Sosial (Pertemanan, Relasi, Penyesuaian, Konflik)</option>
+                    <option value="Bimbingan Belajar">Bimbingan Belajar (Motivasi, Gaya Belajar, Nilai Akademik)</option>
+                    <option value="Bimbingan Karir &amp; PKL">Bimbingan Karir &amp; PKL (Dunia Kerja, Magang, Kuliah)</option>
+                    <option value="Lainnya">Lainnya / Umum</option>
+                  </select>
+                </div>
+
+                <!-- Keluhan / Masalah -->
+                <div class="col-12">
+                  <label for="masalah" class="form-label fw-semibold"><i class="fa-solid fa-comment-dots me-1"></i> Deskripsi Topik / Kendala yang Ingin Dibahas</label>
+                  <textarea class="form-control" id="masalah" name="masalah" rows="4" 
+                            placeholder="Ceritakan secara ringkas hal apa yang sedang kamu hadapi atau diskusikan..." required></textarea>
+                  <small class="text-secondary"><i class="fa-solid fa-lock me-1"></i> Catatan ini bersifat privat, terenkripsi dalam etika konseling, dan hanya dibaca oleh Guru BK terkait.</small>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="col-12 text-center mt-4">
+                  <button type="submit" class="btn-primary-pill px-5 py-3 fs-6">
+                    <i class="fa-solid fa-paper-plane me-2"></i> Kirim Permohonan Janji Konseling
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer-bw">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <i class="fa-solid fa-graduation-cap fs-2 text-white"></i>
+            <span class="fs-5 fw-bold text-white">BK SMKN 7 KOTA SERANG</span>
+          </div>
+          <p class="text-secondary small mb-3">
+            Unit Bimbingan dan Konseling SMKN 7 Kota Serang berkomitmen mendampingi seluruh siswa dalam pengembangan kepribadian, sosial, karir, dan penyelesaian masalah secara profesional dan rahasia.
+          </p>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5>Tautan Cepat</h5>
+          <ul class="list-unstyled small d-flex flex-column gap-2">
+            <li><a href="index.html#beranda"><i class="fa-solid fa-angle-right me-2 text-white"></i> Beranda</a></li>
+            <li><a href="index.html#tentang"><i class="fa-solid fa-angle-right me-2 text-white"></i> Tentang BK</a></li>
+            <li><a href="index.html#layanan"><i class="fa-solid fa-angle-right me-2 text-white"></i> 4 Layanan Konseling</a></li>
+            <li><a href="index.html#guru"><i class="fa-solid fa-angle-right me-2 text-white"></i> Guru Pembimbing BK</a></li>
+            <li><a href="index.html#cek-status"><i class="fa-solid fa-angle-right me-2 text-white"></i> Cek Status Janji Konseling</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h5>Jam Pelayanan</h5>
+          <ul class="list-unstyled small text-secondary d-flex flex-column gap-2">
+            <li><strong class="text-white">Senin - Kamis:</strong><br>07.00 - 15.30 WIB</li>
+            <li><strong class="text-white">Jumat:</strong><br>07.00 - 15.00 WIB</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5>Kontak Sekolah</h5>
+          <ul class="list-unstyled small text-secondary d-flex flex-column gap-2">
+            <li><i class="fa-solid fa-map-pin me-2 text-white"></i> SMKN 7 Kota Serang, Banten</li>
+            <li><i class="fa-solid fa-envelope me-2 text-white"></i> bk@smkn7kotaserang.sch.id</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center text-secondary small">
+        <p class="mb-2 mb-md-0">&copy; <span id="copyrightYear">2026</span> <strong>BK SMKN 7 Kota Serang</strong>. All Rights Reserved.</p>
+        <p class="mb-0"><a href="login.html" class="text-secondary text-decoration-none"><i class="fa-solid fa-lock me-1"></i> Area Masuk Petugas &amp; Siswa</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    document.getElementById('copyrightYear').textContent = new Date().getFullYear();
+
+    // Set tanggal default ke hari ini
+    const today = new Date().toISOString().split('T')[0];
+    const inputTanggal = document.getElementById('tanggal');
+    inputTanggal.value = today;
+    inputTanggal.min = today;
+
+    // Baca parameter URL (misal: ?guru=2 atau ?nis=2025001)
+    const urlParams = new URLSearchParams(window.location.search);
+    const guruParam = urlParams.get('guru');
+    if (guruParam) {
+      document.getElementById('id_guru').value = guruParam;
+    }
+    const nisParam = urlParams.get('nis');
+    if (nisParam) {
+      document.getElementById('nis').value = nisParam;
+    }
+
+    const guruMap = {
+      "1": "Dra. Hj. Siti Aminah, M.Pd.",
+      "2": "Budi Santoso, S.Pd., Kons.",
+      "3": "Trisha Amelia, S.Psi."
+    };
+
+    // Client-side submit handling
+    document.getElementById('formJanjiKonseling').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const nis = document.getElementById('nis').value.trim();
+      const nama = document.getElementById('nama').value.trim();
+      const kelas = document.getElementById('kelas').value;
+      const jurusan = document.getElementById('jurusan').value;
+      const idGuru = document.getElementById('id_guru').value;
+      const tanggal = document.getElementById('tanggal').value;
+      const kategori = document.getElementById('kategori').value;
+      const masalah = document.getElementById('masalah').value.trim();
+
+      const namaGuru = guruMap[idGuru] || "Guru Pembimbing BK";
+
+      // Ambil atau inisialisasi data localStorage
+      let db = {};
+      const stored = localStorage.getItem('bk_konseling_data');
+      if (stored) {
+        try { db = JSON.parse(stored); } catch (err) { db = {}; }
+      }
+
+      if (!db[nis]) {
+        db[nis] = {
+          nama: nama,
+          nis: nis,
+          kelas: kelas,
+          jurusan: jurusan,
+          riwayat: []
+        };
+      }
+
+      // Masukkan jadwal baru di urutan teratas
+      db[nis].riwayat.unshift({
+        tanggal: tanggal,
+        guru: namaGuru,
+        status: "terjadwal",
+        masalah: `[${kategori}] ${masalah}`,
+        solusi: ""
+      });
+
+      localStorage.setItem('bk_konseling_data', JSON.stringify(db));
+
+      // Tampilkan notifikasi sukses
+      const alertBox = document.getElementById('alertSuccess');
+      alertBox.style.display = 'block';
+      document.getElementById('btnCekStatusSubmitted').href = `index.html?nis=${encodeURIComponent(nis)}#cek-status`;
+      alertBox.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+      // Reset form
+      document.getElementById('masalah').value = '';
+    });
+  </script>
+</body>
+</html>
